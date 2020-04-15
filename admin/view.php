@@ -59,6 +59,7 @@ function checkInput($data)
                 <!--Les deux divs permettent de créer deux parties pour l'affichage-->
                 <h1>Voir un item </h1>
                 <br>
+              
                 <form action="" class="site">
                     <div class="form-group">
                         <label for="name">Nom:</label><?php echo ' ' . $item["name"]; ?>

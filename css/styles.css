@@ -92,5 +92,9 @@ a:focus {
 }
 .admin h1 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.help-inline{
+  color: red;
 }
