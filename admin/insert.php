@@ -55,10 +55,11 @@ if (!empty($_POST)) {
             }
         }
     }
-    if ($isSuccess && $isUploadSuccess) {
+    if($isSuccess && $isUploadSuccess) 
+    {
         $db = Database::connect();
-        $statement = $db->prepare("INSERT INTO items (name,description,price,category,image) VALUES(?,?,?,?,?");
-        $statement->execute(array($name, $description, $price, $category, $image));
+        $statement = $db->prepare("INSERT INTO items (name,description,price,category,image) values(?, ?, ?, ?, ?)");
+        $statement->execute(array($name,$description,$price,$category,$image));
         Database::disconnect();
         header("Location: index.php"); // Fonction permettant de revenir à la page index.php une fois l'insertion faite dans la base de données pour vérifier l'ajout dans la liste des items.
     }
@@ -152,7 +153,7 @@ function checkInput($data)
                     <br>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-success"> Ajouter</button>
-                        <a class="btn btn-primary" role="button" href="index.php"> Retour</a>
+                        <a class="btn btn-info" role="button" href="index.php"> Retour</a>
                     </div>
                 </form>
 

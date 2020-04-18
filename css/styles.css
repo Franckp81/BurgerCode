@@ -58,7 +58,7 @@ nav.nav.nav-tabs {
 a:hover,
 a,
 a:focus {
-  background-color: #e7480f;
+  /* background-color: #e7480f; */
   color: #eee;
   margin: 3px;
 }
@@ -66,21 +66,16 @@ a:focus {
   background-color: #fff;
   color: #e7480f;
 }
-.tab-content .btn.btn-primary, .orange {
+.btn.btn-primary, .orange {
   width: 100%;
   padding: 10px;
   font-size: 16px;
   color: #fff;
   background-color: #e7480f;
   text-decoration: none;
-  text-shadow: 2px 2px #333;
+  /* text-shadow: 2px 2px black; */
 }
-.tab-content .btn.btn-primary:hover,
-.btn.btn-primary:focus
-{
-  color: #fff;
-  background-color: #c13c0d;
-}
+
 
 /* ADMIN */
 .container.admin {
